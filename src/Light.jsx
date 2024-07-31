@@ -20,7 +20,7 @@ function Light()
      };
 
      let increaseOpacity= ()=>{
-        if(lightOpacity<1)
+        if(lightSwitch===true && lightOpacity<1)
         {
             const val = +(lightOpacity)+(+(0.1));
             setLightOpacity(val.toFixed(1));
@@ -29,7 +29,7 @@ function Light()
      };
 
      let decreaseOpacity= ()=>{
-        if(lightOpacity>0.1)
+        if(lightSwitch===true &&  lightOpacity>0.1)
             {
                
              setLightOpacity((lightOpacity-0.1).toFixed(1));
